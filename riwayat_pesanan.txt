@@ -1,0 +1,16 @@
+
+=== Pesanan 2025-05-15 22:11:10 ===
+Nama Pelanggan: alma
+Mie Ayam x 2 = Rp24000
+Total: Rp24000
+
+=== Pesanan 2025-05-15 22:21:11 ===
+Nama Pelanggan: alma
+Mie Ayam x 2 = Rp24000
+Es Teh x 2 = Rp10000
+Total: Rp34000
+
+=== Pesanan 2025-05-15 22:27:41 ===
+Nama Pelanggan: alma
+Mie Ayam x 2 = Rp24000
+Total: Rp24000
