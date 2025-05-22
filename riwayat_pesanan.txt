@@ -14,3 +14,8 @@ Total: Rp34000
 Nama Pelanggan: alma
 Mie Ayam x 2 = Rp24000
 Total: Rp24000
+
+=== Pesanan 2025-05-19 18:20:57 ===
+Nama Pelanggan: caca
+Coto Makassar x 3 = Rp105000
+Total Bayar: Rp105000
