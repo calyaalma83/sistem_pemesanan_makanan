@@ -6,15 +6,18 @@ from datetime import datetime
 
 # ===== Data menu =====
 menu = [
-    {"id": 1, "nama": "Nasi Goreng", "harga": 15000, "gambar": "menu_images/nasi_goreng.png"},
-    {"id": 2, "nama": "Mie Ayam", "harga": 12000, "gambar": "menu_images/mie_ayam.png"},
-    {"id": 3, "nama": "Ayam Geprek", "harga": 10000, "gambar": "menu_images/ayam_geprek.png"},
-    {"id": 4, "nama": "Bubur Ayam", "harga": 8000, "gambar": "menu_images/bubur_ayam.png"},
-    {"id": 5, "nama": "Bakso", "harga": 15000, "gambar": "menu_images/bakso.png"},
-    {"id": 6, "nama": "Es Teh", "harga": 3000, "gambar": "menu_images/es_teh.png"},
-    {"id": 7, "nama": "Es Buah", "harga": 10000, "gambar": "menu_images/es_buah.png"},
-    {"id": 8, "nama": "Capcin", "harga": 5000, "gambar": "menu_images/capcin.png"},
-    {"id": 9, "nama": "Es Jeruk Peras", "harga": 5000, "gambar": "menu_images/es_jeruk.png"},
+    {"id": 1, "nama": "Ayam Betutu", "harga": 125000, "gambar": "menu_images/ayambetutuu.jpeg"},
+    {"id": 2, "nama": "Coto Makassar", "harga": 35000, "gambar": "menu_images/coto.jpeg"},
+    {"id": 3, "nama": "Gado-gado", "harga": 15000, "gambar": "menu_images/gadogado.jpeg"},
+    {"id": 4, "nama": "Gudeg", "harga": 15000, "gambar": "menu_images/gudeg.jpeg"},
+    {"id": 5, "nama": "Ketak Telor", "harga": 8000, "gambar": "menu_images/keraktelor.jpeg"},
+    {"id": 6, "nama": "Nasi Liwet", "harga": 12000, "gambar": "menu_images/nasiliwet.jpeg"},
+    {"id": 7, "nama": "Opor", "harga": 13000, "gambar": "menu_images/opor.jpeg"},
+    {"id": 8, "nama": "Pempek", "harga": 10000, "gambar": "menu_images/pempek.jpeg"},
+    {"id": 9, "nama": "Rawon", "harga": 13000, "gambar": "menu_images/rawon.jpeg"},
+    {"id": 10, "nama": "Rendang", "harga": 15000, "gambar": "menu_images/rendang.jpeg"},
+    {"id": 11, "nama": "Rujak Cingur", "harga": 15000, "gambar": "menu_images/rujakcingur.jpeg"},
+    {"id": 12, "nama": "Udang Selingkuh", "harga": 45000, "gambar": "menu_images/udangselingkuh.jpeg"},
     
 ]
 
