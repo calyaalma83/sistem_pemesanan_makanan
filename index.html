@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistem Pemesanan Makanan</title>
+  <style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #0f0f1a;
+      color: #00ffe7;
+      padding: 20px;
+    }
+    .menu-container { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+    .menu-item {
+      background-color: #1a1a2e; border-radius: 10px;
+      width: 200px; padding: 10px; text-align: center;
+    }
+    .menu-item img { width: 180px; height: 100px; object-fit: cover; border-radius: 5px; }
+    .form-container {
+      background-color: #1a1a2e; padding: 20px; margin: 20px auto;
+      width: 300px; border-radius: 10px;
+    }
+    input { width: 100%; padding: 8px; margin-bottom: 10px;
+      background-color: #0f0f1a; color: white; border: 1px solid #444; border-radius: 5px;
+    }
+    button {
+      width: 100%; padding: 10px;
+      background-color: #ff00ff; color: black;
+      font-weight: bold; border: none; border-radius: 5px;
+    }
+    .struk {
+      background-color: #1a1a2e; padding: 15px;
+      margin-top: 20px; border-radius: 10px; color: #00ffcc;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center; color:#ff00ff;">Sistem Pemesanan Makanan</h2>
+
+  <div class="menu-container">
+    <!-- Contoh 3 menu -->
+    <div class="menu-item"><img src="menu_images/nasi_goreng.png"><p>Nasi Goreng - Rp15.000</p></div>
+    <div class="menu-item"><img src="menu_images/mie_ayam.png"><p>Mie Ayam - Rp12.000</p></div>
+    <div class="menu-item"><img src="menu_images/ayam_geprek.png"><p>Ayam Geprek - Rp10.000</p></div>
+    <div class="menu-item"><img src="menu_images/nasi_goreng.png"><p>Nasi Goreng - Rp15.000</p></div>
+    <div class="menu-item"><img src="menu_images/mie_ayam.png"><p>Mie Ayam - Rp12.000</p></div>
+    <div class="menu-item"><img src="menu_images/ayam_geprek.png"><p>Ayam Geprek - Rp10.000</p></div>
+    <div class="menu-item"><img src="menu_images/nasi_goreng.png"><p>Nasi Goreng - Rp15.000</p></div>
+    <div class="menu-item"><img src="menu_images/mie_ayam.png"><p>Mie Ayam - Rp12.000</p></div>
+    <div class="menu-item"><img src="menu_images/ayam_geprek.png"><p>Ayam Geprek - Rp10.000</p></div>
+  </div>
+
+  <div class="form-container">
+    <form id="formPesan">
+      <label>Nama Pelanggan:</label>
+      <input type="text" id="nama" required>
+      <label>ID Makanan:</label>
+      <input type="number" id="id" required>
+      <label>Jumlah:</label>
+      <input type="number" id="jumlah" required>
+      <button type="submit">🛒 Pesan</button>
+    </form>
+  </div>
+
+  <div class="struk" id="struk">
+    Masukkan data untuk melihat struk...
+  </div>
+
+  <script>
+    const menu = [
+      { id: 1, nama: "Nasi Goreng (1)", harga: 15000 },
+      { id: 2, nama: "Mie Ayam (2)", harga: 12000 },
+      { id: 3, nama: "Ayam Geprek (3)", harga: 10000 },
+      { id: 4, nama: "Bubur Ayam (4)", harga: 10000 },
+      { id: 5, nama: "Bakso (5)", harga: 10000 },
+      { id: 6, nama: "Es Teh (6)", harga: 10000 },
+      { id: 7, nama: "Es Buah (7)", harga: 10000 },
+      { id: 8, nama: "Cappucino Cincau (8)", harga: 10000 },
+      { id: 9, nama: "Es Jeruk (9)", harga: 10000 },  
+    ];
+
+    const form = document.getElementById("formPesan");
+    const struk = document.getElementById("struk");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const nama = document.getElementById("nama").value.trim();
+      const id = parseInt(document.getElementById("id").value);
+      const jumlah = parseInt(document.getElementById("jumlah").value);
+
+      const item = menu.find(m => m.id === id);
+
+      if (!item) {
+        struk.textContent = "ID Makanan tidak ditemukan!";
+        return;
+      }
+
+      const total = item.harga * jumlah;
+
+      const output = `=== Struk Pesanan ===
+Nama Pelanggan: ${nama}
+
+${item.nama} x ${jumlah} = Rp${total.toLocaleString('id-ID')}
+
+Total Bayar: Rp${total.toLocaleString('id-ID')}
+      `;
+      struk.textContent = output;
+    });
+  </script>
+
+</body>
+</html>
